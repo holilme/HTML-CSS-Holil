@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+        <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: aquamarine;
+        }
+        
+        .hero-image {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("tes.jpg");
+          height: 60%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+        
+        .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+        }
+        
+        .hero-text button:hover {
+          background-color: #555;
+          color: white;
+        }
+
+
+        .container-video {
+          display: flex;
+          justify-content: center;
+        }
+
+        video {
+          width: 100%;
+          height: auto;
+        }
+        @media only screen and (max-width: 375px) {
+          .hero-image {
+          width: 100%;
+          height: 200px;
+          }
+          .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          width: auto;
+          }
+          
+
+        }
+        </style>
+</head>
+
+
+
+<body>    
+    <!--ini adalah Contoh Elemen Non Semantik & Contoh Nested Elemen-->
+    <div class="hero-image">
+            <div class="hero-text">
+                <h1 style="font-size:50px"><i>Indonesia</i></h1>
+            </div>
+    </div>
+
+    <div class="w3-bar w3-black">
+      <a href="#" class="w3-bar-item w3-button">Home</a>
+      <a href="about.html" class="w3-bar-item w3-button" >About</a>
+      <a href="login.html" class="w3-bar-item w3-button">Login</a>
+      <a href="signup.html" class="w3-bar-item w3-button">Sign Up</a>
+    </div>
+
+
+
+    <div class="container-video">
+      <video width="480" height="360" controls>
+        <source src="videoplayback.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div style= "display: flex; flex-direction:row; align-items: center; "> 
+    <!--ini adalah Contoh Blok Elemen-->
+        <div style="width: 40%; text-align: center;"> 
+          <img src="indonesia.png" alt="Avatar" class="avatar">
+        </div>
+  
+
+
+        <!--ini adalah Contoh Elemen Semantik & Contoh Inline Elemen--> 
+        <div style="width: 60%">
+            <b>Indonesia</b>, disebut juga dengan <b>Negara Kesatuan Republik Indonesia</b> (<b>NKRI</b>, <small>pengucapan bahasa Indonesia:&nbsp;</small><span title="Representasi dalam Alfabet Fonetis Internasional (IPA)" class="IPA"><a href="/wiki/Wikipedia:IPA_untuk_bahasa_Indonesia" class="mw-redirect" title="Wikipedia:IPA untuk bahasa Indonesia">[nəˈɡara kəsaˈt̪ua̯n reˈpublɪk in.ˈdo.nɛ.sja]</a></span>); atau hanya <b>Republik Indonesia</b> (<b>RI</b>) adalah negara di <a href="/wiki/Asia_Tenggara" title="Asia Tenggara">Asia Tenggara</a> yang dilintasi garis <a href="/wiki/Khatulistiwa" title="Khatulistiwa">khatulistiwa</a> dan berada di antara daratan benua <a href="/wiki/Asia" title="Asia">Asia</a> dan <a href="/wiki/Oseania" title="Oseania">Oseania</a>, serta antara <a href="/wiki/Samudra_Pasifik" title="Samudra Pasifik">Samudra Pasifik</a> dan <a href="/wiki/Samudra_Hindia" title="Samudra Hindia">Samudra Hindia</a>. Indonesia adalah negara <a href="/wiki/Kepulauan" title="Kepulauan">kepulauan</a> terbesar di dunia yang terdiri dari 17.504 pulau. Nama alternatif yang biasa dipakai adalah <a href="/wiki/Nusantara" title="Nusantara">Nusantara</a>. Dengan populasi mencapai 270.203.917 jiwa pada tahun 2020, Indonesia menjadi negara berpenduduk terbesar keempat di dunia dan negara berpenduduk <a href="/wiki/Muslim" title="Muslim">Muslim</a> terbesar di dunia, dengan penganut lebih dari 230 juta jiwa.<br>  
+            <b>PR HTML 2 & CSS 2 </b><br>
+            <b>Q : Buat halaman login dan tampilan websitenya responsif + unsur media di websitenya baik video atau audio. </b><br>
+            A: Untuk halaman login dan signup ada di Navbar index.html dengan tampilan responsif Iphone X dengan resolusi 375 px <br>
+            Unsur media ada pada halaman index.html berupa video dengan tampilan responsif.
+        </div>
+        
+        
+   
+    </div>
+    <p>
+        <!--Contoh hyperlink tanpa open new tab browser-->
+        <a href="https://www.digitalskola.com/">Visit Digital Skola</a>
+    </p>
+
+    <p>
+        <!--Contoh hyperlink dengan open new tab browser-->
+        <a href="https://www.digitalskola.com/" target="_blank">Visit Digital Skola New Tab</a>
+    </p>
+    
+    </body>
+</html>
